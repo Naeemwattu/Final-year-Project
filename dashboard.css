@@ -2,32 +2,171 @@
     padding: 0;
     margin: 0;
 }
-header{
+/* ----------------navigation------------------- */
+.nav-bar{
+    position: sticky;
     top: 0;
-    left: 0;
+    z-index: 10;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    /* text-align: left;
+    float: right; */
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav-bar ul li a:hover{
+    color: black!important;
+}
+.navbar{
+    background: #3399ff;
+}
+
+
+/* ---------content section------------ */
+#content{
     width: 100%;
-    display: flex;
-    padding: 18px;
-    /* margin: 20px; */
-    position: fixed;
-    justify-content: space-between;
-    z-index: 1000;
-    background-color: burlywood;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.60)), url('img/bg-content.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 }
-.logo{
-    display: flex;
+#content h1{
+    padding-top: 200px;
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
 }
-.logo a{
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
+#content p{
+    color: white;
+    font-size: 20px;
 }
-.searchbox{
-    font-size: 25px;
+
+
+/* ------------courses section-------- */
+#courses{
+    margin: 100px auto;
+    width: 80%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('img/bg-courses.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    border-radius: 15px;
 }
-.searchbox .fa{
-    font-size: 25px;
+#courses h1{
+    padding-top: 200px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
 }
-.menu ul li{
-    text-decoration: none;
+#courses p{
+    color: white;
+    font-size: 20px;
+}
+#courses input{
+    width: 25%;
+    padding:10px 10px;
+    outline: none;
+    border: 2px solid #3399ff;
+    border-radius: 10px;
+    /* background: transparent; */
+    font-size: 15px;
+}
+@media (max-width:700px) {
+    #courses p{
+        font-size: 18px;
+    }
+    #courses input{
+        width: 60%;
+    }
+}
+
+/* ------------jobs section-------- */
+#jobs{
+    margin: 100px auto;
+    width: 80%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)), url('img/bg-jobs.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border-radius: 15px;
+}
+#jobs h1{
+    padding-top: 200px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+#jobs p{
+    color: white;
+    font-size: 20px;
+}
+#jobs input{
+    width: 25%;
+    padding:10px 10px;
+    outline: none;
+    border: 2px solid #3399ff;
+    border-radius: 10px;
+    /* background: transparent; */
+    font-size: jobs
+}
+@media (max-width:700px) {
+    #jobs p{
+        font-size: 18px;
+    }
+    #jobs input{
+        width: 60%;
+    }
+}
+
+
+
+/* ---------------Contact us section------------- */
+#contact h1{
+    text-align: center;
+    color: #3399ff;
+}
+#contact{
+    background: #d9d9d9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact-form{
+    padding: 15px;
+}
+/* .form-control{
+    border-radius: 0!important;
+    border: 0!important;
+} */
+::placeholder{
+    color:#3399ff;
+}
+
+.follow{
+    background: white;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa{
+    margin: 10px;
+    font-weight: bold;
+    color: #3399ff;
+    font-size: 20px;
+}
+
+
+
+/* ----------footer------------ */
+.footer{
+    background: #3399ff;
+    padding: 12px;
+    color: white;
 }
