@@ -1,0 +1,318 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* ----------------navigation------------------- */
+.nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+}
+.navbar-nav li{
+    padding: 0 10px;
+}
+.navbar-nav li a{
+    /* text-align: left;
+    float: right; */
+    font-size: 15px;
+    font-weight: 700;
+}
+.nav-bar ul li a:hover{
+    color: white!important;
+}
+.navbar{
+    background: #3399ff;
+}
+
+/* -----------login section-------------- */
+.login-signup{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#e033ff,#3399ff);
+}
+.login-box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    overflow: hidden;
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+.login-box h2{
+    text-align: center;
+}
+.login-box a{
+    padding: 5px;
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* ::selection{
+    background: #1a75ff;
+    color: #fff;
+}
+.wrapper{
+    overflow: hidden;
+    max-width: 390px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  }
+  .wrapper .title-text{
+    display: flex;
+    width: 200%;
+  }
+  .wrapper .title{
+    width: 50%;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .wrapper .slide-controls{
+    position: relative;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px 0 10px 0;
+    justify-content: space-between;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+  }
+  .slide-controls .slide{
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+  }
+  .slide-controls label.signup{
+    color: #000;
+  }
+  .slide-controls .slider-tab{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    z-index: 0;
+    border-radius: 15px;
+    background: -webkit-linear-gradient(left,#003366,#004080,#0059b3
+  , #0073e6);
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #signup:checked ~ .slider-tab{
+    left: 50%;
+  }
+  #signup:checked ~ label.signup{
+    color: #fff;
+    cursor: default;
+    user-select: none;
+  }
+  #signup:checked ~ label.login{
+    color: #000;
+  }
+  #login:checked ~ label.signup{
+    color: #000;
+  }
+  #login:checked ~ label.login{
+    cursor: default;
+    user-select: none;
+  }
+  .wrapper .form-container{
+    width: 100%;
+    overflow: hidden;
+  }
+  .form-container .form-inner{
+    display: flex;
+    width: 200%;
+  }
+  .form-container .form-inner form{
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+  }
+  .form-inner form .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-inner form .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 15px;
+    border-radius: 15px;
+    border: 1px solid lightgrey;
+    border-bottom-width: 2px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+  }
+  .form-inner form .field input:focus{
+    border-color: #1a75ff;
+    box-shadow: inset 0 0 3px #fb6aae;
+  }
+  .form-inner form .field input::placeholder{
+    color: #999;
+    transition: all 0.3s ease;
+  }
+  form .field input:focus::placeholder{
+    color: #1a75ff;
+  }
+  .form-inner form .pass-link{
+    margin-top: 5px;
+  }
+  .form-inner form .signup-link{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .form-inner form .pass-link a,
+  .form-inner form .signup-link a{
+    color: #1a75ff;
+    text-decoration: none;
+  }
+  .form-inner form .pass-link a:hover,
+  .form-inner form .signup-link a:hover{
+    text-decoration: underline;
+  }
+  form .btn{
+    height: 50px;
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  form .btn .btn-layer{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right,#003366,#004080,#0059b3
+  , #0073e6);
+    border-radius: 15px;
+    transition: all 0.4s ease;;
+  }
+  form .btn:hover .btn-layer{
+    left: 0;
+  }
+  form .btn input[type="submit"]{
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    padding-left: 0;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+  } */
+
+
+
+
+/* -------------about us section------------- */
+
+#about-us{
+    width: 100%;
+    /* height: 80vh; */
+    margin: 50px auto; 
+}
+#about-us .row{
+    margin-top: 30px;
+}
+.col-md-4{
+    margin: 40px auto;
+}
+.profile{
+    padding: 70px 10px 10px;
+    background-color: lightgray;
+}
+.profile img{
+    top: -60px;
+    position: absolute;
+    left: calc(50% - 60px);
+    border: 10px solid white;
+}
+.user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.profile h3{
+    font-size: 15px;
+    margin-top: 20px;
+    color: #3399ff;
+    font-weight: bold;
+}
+.profile .fa{
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile span{
+    font-size: 12px;
+    color:black;
+}
+.profile:hover{
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* ---------------Contact us section------------- */
+
+#contact{
+    background: #d9d9d9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.contact-form{
+    padding: 15px;
+}
+/* .form-control{
+    border-radius: 0!important;
+    border: 0!important;
+} */
+::placeholder{
+    color:#3399ff;
+}
+
+.follow{
+    background: white;
+    padding: 10px;
+    margin: 15px;
+}
+.contact-info .fa{
+    margin: 10px;
+    font-weight: bold;
+    color: #3399ff;
+    font-size: 20px;
+}
+
+
+
+/* ----------footer------------ */
+.footer{
+    background: #3399ff;
+    padding: 12px;
+    color: white;
+}
