@@ -34,7 +34,7 @@
     height: 100vh;
     background-image: linear-gradient(to bottom right,#e033ff,#3399ff);
 }
-.login-box{
+.signup-box{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -45,14 +45,19 @@
     padding: 30px;
     border-radius: 15px;
 }
-.login-box h2{
+.signup-box h2{
     text-align: center;
 }
-.login-box a{
+.signup-box a{
     padding: 5px;
     display: block;
     text-decoration: none;
     font-size: 15px;
+}
+@media (max-width:700px) {
+    .signup-box{
+        width: 320px;
+    }
 }
 
 /* -------------about us section------------- */
