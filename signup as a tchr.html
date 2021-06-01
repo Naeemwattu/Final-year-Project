@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Counselling</title>
     <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="login form.css">
+    <link rel="stylesheet" href="signup as a tchr.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified CSS -->
@@ -57,25 +57,62 @@
         </nav>
     </section>
     <section class="login-signup">
-        <div class="login-box">
-            <div class="login-text">
-                <h2>LOGIN</h2>
+        <div class="signup-box">
+            <div class="signup-text">
+                <h2>Sign Up As a Teacher</h2>
                 <form action="">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+                        <label>First Name</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="pswd" placeholder="Enter Your Password">
+                        <label>Last Name</label>
+                        <input type="text" class="form-control" id="name">
                     </div>
-                    <div class="form-group form-check">
-                        <label class="form-check-lable">
-                            <input type="checkbox" class="form-check-input" name="remember"> Remember me?
-                        </label>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" id="email">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Login</button>
-                    <a href="forgot password.html">Forgot Password</a>
-                    <a href="signup form.html">Create your Account or SignUp</a>
-                    <a href="signup as a tchr.html">SignUp As a Teacher</a>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="number" class="form-control" id="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Gender</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone No.</label>
+                        <input type="tel" class="form-control" id="+92">
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <h5>Education Details</h5>
+                    <div class="form-group">
+                        <label>Qualification</label>
+                        <input type="text" class="form-control" id="qualification">
+                    </div>
+                    <div class="form-group">
+                        <label>Institute/College/University</label>
+                        <input type="text" class="form-control" id="institute">
+                    </div>
+                    <div class="form-group">
+                        <label>Grade/Average</label>
+                        <input type="text" class="form-control" id="grade">
+                    </div>
+                    <div class="form-group">
+                        <label>Degree/Certificate</label>
+                        <input type="file" id="file">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mb-2">Submit</button>
+                    <a href="login form.html">Back to LOGIN</a>
                 </form>
             </div>
         </div>

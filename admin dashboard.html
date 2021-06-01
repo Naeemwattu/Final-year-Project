@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Coach</title>
+    <link rel="stylesheet" href="admin dashboard.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- One advantage of using the Bootstrap 4 CDN: -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- ------wraper start---------- -->
+    <div class="wraper">
+        <!-- --------header-menu-start------- -->
+        <div class="header">
+            <div class="header-menu">
+                <div class="title">Career <span>Coach</span></div>
+                <div class="sidebar-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <ul>
+                    <li><a href="#"><i class="fa fa-bell"></i></a></li>
+                    <li><a href="#"><i class="fa fa-cart-arrow-down"></i></a></li>
+                    <li><a href="#"><i class="fa fa-sign-out"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- --------header-menu-end------- -->
+
+        <!-- --------sidebar-start------- -->
+        <div class="sidebar">
+            <div class="sidebar-menu">
+                <center class="profile">
+                    <img src="img/nomi.jpeg" alt="">
+                    <p>User</p>
+                </center>
+                <ul class="navbar-nav">
+                    <li class="item">
+                        <a href="#" class="nav-link">Courses</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">Categories</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">My Learning</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">Messages</a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="nav-link">Submit Certificate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ----------sidebar-end---------- -->
+
+
+        <!-- --------main-content--------- -->
+        <div class="main-content">
+
+        </div>
+
+    </div>
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".sidebar-btn").click(function(){
+                $(".wraper").toggleClass("collapse");
+
+            });
+        });
+    </script>
+
+</body>
+
+</html>
