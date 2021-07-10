@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Career Counselling</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="1st-dashboard.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Latest compiled and minified CSS -->
@@ -21,6 +21,8 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- One advantage of using the Bootstrap 4 CDN: -->
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
 
 
     <!-- fonts -->
@@ -192,6 +194,14 @@
             <p>© 2021 Career Counselling • Built with Team Mates</p>
         </div>
     </section>
+
+
+    <script>
+        var scroll = new SmoothScroll('a nav-link[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
+    </script>
 </body>
 
 </html>

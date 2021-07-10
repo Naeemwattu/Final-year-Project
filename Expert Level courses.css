@@ -230,15 +230,12 @@ nav .profile-details img{
   padding-top: 70px;
 }
 /* --------------------------------------------------------Recommended -course section start----------- */
-.home-section .home-content .course-width{
-  width: 100%;
-}
-.home-section .home-content .rec-course{
-  display: inline-block;
+.home-section .home-content .beginner-course{
+  text-align: center;
   padding: 20px;
 }
-.home-section .home-content .rec-course .course-level{
-  text-decoration: none;
+.home-section .home-content .course-width{
+  width: 100%;
 }
 .home-section .home-content .card-body .card-title{
   font-weight: bold;
